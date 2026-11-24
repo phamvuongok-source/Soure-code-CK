@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    background: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px 15px;
+}
+
+.auth-card {
+    background: #ffffff;
+    padding: 35px 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 460px;
+}
+
+.auth-title {
+    text-align: center;
+    color: #f39c12;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #dcdde1;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #1ca9d4;
+    box-shadow: 0 0 0 3px rgba(28, 169, 212, 0.2);
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+}
+.form-row .form-group {
+    flex: 1;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #e67e22;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-submit:hover {
+    background: #d35400;
+}
+
+.btn-submit:active {
+    transform: scale(0.99);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 13px;
+    color: #666;
+}
+
+.auth-footer a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+.back-home {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #edf2f7;
+}
+
+.back-home a {
+    color: #7f8c8d;
+    font-weight: normal;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.back-home a:hover {
+    color: #2c3e50;
+}
+
+/* Toast */
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 12px 24px;
+    background: #28a745;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    z-index: 10000;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+    font-size: 15px;
+}
+
+.toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.toast-danger {
+    background: #dc3545;
+}

@@ -1,0 +1,359 @@
+/* ===== BASE - Theo style Trang Chủ RE:QUIEM ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background-color: #f8f9fa; color: #333; }
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 22px;
+    padding: 25px 5% 15px;
+    border-bottom: 3px solid #1ca9d4;
+    margin-bottom: 25px;
+}
+
+/* ===== ĐƠN HÀNG CỦA TÔI (MY ORDERS) ===== */
+.my-orders-wrapper {
+    max-width: 960px;
+    margin: 20px auto 40px;
+    padding: 0 15px;
+}
+
+/* Status tabs (Lọc trạng thái đơn hàng) */
+.status-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+    flex-wrap: wrap;
+}
+
+.status-tabs a {
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: all 0.2s ease;
+    background: #f1f5f9;
+}
+
+.status-tabs a:hover {
+    color: #1ca9d4;
+    background: #e0f2fe;
+}
+
+.status-tabs a.active {
+    background: #1ca9d4;
+    color: #fff;
+}
+
+/* Order card */
+.order-card {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.order-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.order-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.order-card-header strong {
+    color: #1e293b;
+    font-size: 16px;
+}
+
+.order-date {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 5px 14px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.status-ChoXuLy {
+    background: #fef3c7;
+    color: #d97706;
+}
+
+.status-DangGiao {
+    background: #e0f2fe;
+    color: #0284c7;
+}
+
+.status-HoanThanh {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.status-DaHuy {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* Order items list */
+.order-items-list {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.order-line {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #f1f5f9;
+}
+
+.order-line:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.item-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f5f9;
+    border-radius: 6px;
+    font-size: 24px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info a {
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+.item-info a:hover {
+    color: #1ca9d4;
+}
+
+.item-qty {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 15px;
+    min-width: 110px;
+    text-align: right;
+}
+
+/* Order card footer */
+.order-card-footer {
+    padding: 15px 20px;
+    background: #fafafa;
+    border-top: 1px solid #f1f5f9;
+}
+
+.order-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.order-total-row {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 17px;
+    color: #e67e22;
+    padding-top: 10px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.order-total-row strong {
+    font-size: 18px;
+}
+
+.order-note {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #64748b;
+    font-style: italic;
+    background: #fff;
+    padding: 8px 14px;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+
+/* Empty state & Pagination */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+.empty-state p {
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.empty-state a {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #1ca9d4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.empty-state a:hover {
+    background: #0088cc;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.pagination a {
+    padding: 8px 14px;
+    border: 1px solid #cbd5e1;
+    background: #fff;
+    color: #1e293b;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.pagination a.active {
+    background: #1ca9d4;
+    color: #fff;
+    border-color: #1ca9d4;
+}
+
+/* ===== ADMIN DASHBOARD CARDS (Backward compatibility) ===== */
+.admin-dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 25px 5% 15px;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 150px;
+    border-left: 4px solid #1ca9d4;
+}
+
+.stat-card h3 {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.stat-card .value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.admin-table-container {
+    margin: 15px 5% 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.admin-table-container h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-left: 4px solid #1ca9d4;
+    padding-left: 10px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #2c3e50;
+    color: #fff;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.admin-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+    color: #444;
+}
+
+.admin-table tr:hover td { background: #f1f8fb; }
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-pending   { background: #fff3cd; color: #856404; }
+.badge-completed { background: #d4edda; color: #155724; }
+.badge-danger    { background: #f8d7da; color: #721c24; }
+
+.btn-action {
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}

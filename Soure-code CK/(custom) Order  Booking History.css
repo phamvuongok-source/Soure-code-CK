@@ -1,0 +1,115 @@
+/* ===== BASE - Theo style Trang Chủ RE:QUIEM ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background-color: #f8f9fa; color: #333; }
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 22px;
+    padding: 25px 5% 15px;
+    border-bottom: 3px solid #1ca9d4;
+    margin-bottom: 0;
+}
+
+/* ===== ADMIN DASHBOARD CARDS ===== */
+.admin-dashboard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 25px 5% 15px;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 150px;
+    border-left: 4px solid #1ca9d4;
+}
+
+.stat-card h3 {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.stat-card .value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* ===== ADMIN TABLE CONTAINER ===== */
+.admin-table-container {
+    margin: 15px 5% 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.admin-table-container h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-left: 4px solid #1ca9d4;
+    padding-left: 10px;
+}
+
+/* ===== TABLE ===== */
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #2c3e50;
+    color: #fff;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.admin-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+    color: #444;
+}
+
+.admin-table tr:hover td { background: #f1f8fb; }
+
+/* ===== BADGES ===== */
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-pending   { background: #fff3cd; color: #856404; }
+.badge-completed { background: #d4edda; color: #155724; }
+.badge-danger    { background: #f8d7da; color: #721c24; }
+
+/* ===== BUTTON ===== */
+.btn-action {
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-action:hover { background: #cf6d17; }
+
+@media (max-width: 768px) {
+    .admin-dashboard { flex-direction: column; }
+}

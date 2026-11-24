@@ -1,0 +1,104 @@
+/* ===== BASE - Theo style Trang Chủ RE:QUIEM ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+body { background-color: #f8f9fa; color: #333; }
+
+/* ===== SECTION TITLE ===== */
+.section-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 22px;
+    padding: 25px 5% 15px;
+    border-bottom: 3px solid #1ca9d4;
+    margin-bottom: 0;
+}
+
+/* ===== REVIEWS CONTAINER ===== */
+.reviews-container {
+    max-width: 720px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 25px;
+}
+
+.reviews-container h3 {
+    font-size: 16px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-left: 4px solid #1ca9d4;
+    padding-left: 10px;
+}
+
+/* ===== REVIEW FORM ===== */
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: Arial, sans-serif;
+}
+
+.review-form select:focus,
+.review-form textarea:focus { border-color: #1ca9d4; }
+
+.review-form textarea { resize: vertical; }
+
+/* ===== SUBMIT BUTTON ===== */
+.btn-gold {
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-gold:hover { background: #cf6d17; }
+
+/* ===== DIVIDER ===== */
+hr {
+    border: none;
+    border-top: 1px solid #e9ecef;
+    margin: 20px 0;
+}
+
+/* ===== REVIEW CARDS ===== */
+.review-card {
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.review-card:last-child { border-bottom: none; }
+
+.review-card strong {
+    font-size: 14px;
+    color: #2c3e50;
+}
+
+.review-card .stars {
+    color: #f39c12;
+    margin-left: 8px;
+}
+
+.review-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.review-card small {
+    font-size: 12px;
+    color: #999;
+}

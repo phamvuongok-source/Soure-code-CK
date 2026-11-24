@@ -1,0 +1,212 @@
+/* ==========================================================================
+   CHI TIẾT SẢN PHẨM - RE:QUIEM
+   ========================================================================== */
+
+.detail-wrapper {
+    margin-top: 15px;
+}
+
+.detail-card {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 35px;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 35px;
+}
+
+@media (max-width: 800px) {
+    .detail-card {
+        flex-direction: column;
+    }
+}
+
+.detail-img-box {
+    width: 380px;
+    flex-shrink: 0;
+    background: #f8fafc;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+}
+
+@media (max-width: 800px) {
+    .detail-img-box {
+        width: 100%;
+    }
+}
+
+.detail-img-icon {
+    font-size: 80px;
+    margin-bottom: 15px;
+}
+
+.detail-info {
+    flex-grow: 1;
+}
+
+.detail-info h1 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.meta-line {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 18px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.meta-line strong {
+    color: #2c3e50;
+}
+
+.detail-price-box {
+    background: #fff8f0;
+    border: 1px solid #fed7aa;
+    padding: 16px 20px;
+    border-radius: 6px;
+    margin-bottom: 22px;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.price-huge {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.stock-badge {
+    display: inline-block;
+    background: #ecfdf5;
+    color: #047857;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.desc-section {
+    line-height: 1.7;
+    color: #475569;
+    font-size: 15px;
+    margin-bottom: 25px;
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 18px;
+}
+
+.desc-section h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.add-cart-form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.qty-input {
+    width: 70px;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn-buy-now {
+    padding: 12px 30px;
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-buy-now:hover {
+    background: #d35400;
+}
+
+.btn-buy-now:active {
+    transform: scale(0.98);
+}
+
+.related-section {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.related-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    border-left: 4px solid #1ca9d4;
+    padding-left: 12px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.related-card {
+    background: #f8fafc;
+    border: 1px solid #edf2f7;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s;
+}
+
+.related-card:hover {
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.related-card a {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 8px 0;
+    display: block;
+}
+
+.related-card a:hover {
+    color: #16a085;
+}
+
+.related-price {
+    color: #e74c3c;
+    font-weight: bold;
+    font-size: 15px;
+}
